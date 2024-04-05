@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Using Flask</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 style="text-align:center; color:blue;">Prediction from Regression</h1>
+    <hr>
+    <br>
+    <h2 style="text-align:center;">Enter the details</h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form method="post" action="/predict">
+                    <div class="form-group">
+                        <label for="longitude">Longitude</label>
+                        <input type="text" class="form-control" id="longitude" name="longitude">
+                    </div>
+                    <div class="form-group">
+                        <label for="latitude">Latitude</label>
+                        <input type="text" class="form-control" id="latitude" name="latitude">
+                    </div>
+                    <div class="form-group">
+                        <label for="housing_median_age">Housing Median Age</label>
+                        <input type="text" class="form-control" id="housing_median_age" name="housing_median_age">
+                    </div>
+                    <div class="form-group">
+                        <label for="total_rooms">Total Rooms</label>
+                        <input type="text" class="form-control" id="total_rooms" name="total_rooms">
+                    </div>
+                    <div class="form-group">
+                        <label for="total_bedrooms">Total Bedrooms</label>
+                        <input type="text" class="form-control" id="total_bedrooms" name="total_bedrooms">
+                    </div>
+                    <div class="form-group">
+                        <label for="population">Population</label>
+                        <input type="text" class="form-control" id="population" name="population">
+                    </div>
+                    <div class="form-group">
+                        <label for="households">Households</label>
+                        <input type="text" class="form-control" id="households" name="households">
+                    </div>
+                    <div class="form-group">
+                        <label for="median_income">Median Income</label>
+                        <input type="text" class="form-control" id="median_income" name="median_income">
+                    </div>
+                    <div class="form-group">
+                        <label for="ocean_proximity">Ocean Proximity</label>
+                        <input type="text" class="form-control" id="ocean_proximity" name="ocean_proximity">
+                    </div>
+                    <div class="form-group">
+                        <label for="median_house_value">Median House Value</label>
+                        <input type="text" class="form-control" id="median_house_value" name="median_house_value">
+                    </div>
+                    
+
+
+
+
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
