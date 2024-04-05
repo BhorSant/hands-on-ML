@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 
 def home():
-    return render_template("template/index.html", prediction=model_prediction)
+    return render_template("index.html")
 
 
 @app.route("/predict", methods=["POST"])
@@ -54,7 +54,7 @@ def predict():
         except ValueError:
             return "Please Enter the values"    
 
-    return render_template("template/index.html", prediction=model_prediction)
+    return render_template("index.html", prediction=model_prediction)
 
 
 if __name__ == "__main__":
